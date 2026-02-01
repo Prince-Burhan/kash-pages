@@ -1,183 +1,183 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Burhan Sheikh — Business Web Platforms & Admin Systems',
+  title: 'Plans & Pricing | KashPages',
   description:
-    'I design and build professional, modern web platforms for real businesses. Admin dashboards, customer systems, SEO-ready, scalable and production-grade.',
+    'Transparent one-time pricing for professional, custom-built business websites. No subscriptions. No lock-in.',
 }
 
-export default function HomePage() {
+export default function PlansPage() {
   return (
-    <main className="min-h-screen bg-[#0b0d10] text-white">
+    <main className="min-h-screen bg-white">
+      {/* HEADER */}
+      <section className="border-b">
+        <div className="max-w-7xl mx-auto px-6 py-16 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+            Plans & Pricing
+          </h1>
+          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+            One-time pricing. Fully custom-built. No subscriptions. Designed to
+            grow with your business.
+          </p>
+        </div>
+      </section>
 
-      {/* ================= HERO ================= */}
-      <section className="relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 py-28">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              I Build <span className="text-blue-500">Business Web Platforms</span>,
-              <br /> not just websites.
-            </h1>
+      {/* PLANS */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <div className="grid lg:grid-cols-3 gap-8">
 
-            <p className="mt-6 text-lg text-gray-300">
-              Modern, secure, scalable web systems designed for real businesses —
-              admin dashboards, customer management, reviews, SEO, and long-term growth.
+          {/* STANDARD */}
+          <div className="border rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <h2 className="text-2xl font-bold text-gray-900">Standard</h2>
+            <p className="mt-2 text-gray-600">
+              Best for businesses starting their professional digital presence
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                className="px-8 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition font-semibold"
-              >
-                View My Work
-              </a>
-              <a
-                href="https://wa.me/919999999999"
-                target="_blank"
-                className="px-8 py-3 rounded-lg border border-white/20 hover:bg-white/5 transition font-semibold"
-              >
-                Discuss on WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* subtle background glow */}
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-blue-600/20 blur-[120px]" />
-      </section>
-
-      {/* ================= WHAT I DO ================= */}
-      <section className="py-24 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-14">
-            What I Actually Build
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Business Web Platforms',
-                desc: 'Production-ready platforms built for real operations, not demos or templates.',
-              },
-              {
-                title: 'Admin Dashboards',
-                desc: 'Manage customers, reviews, staff, content, and data from one secure panel.',
-              },
-              {
-                title: 'SEO & Performance Systems',
-                desc: 'Fast, indexed, social-share optimized systems designed to grow visibility.',
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500/50 transition"
-              >
-                <h3 className="text-xl font-semibold mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-gray-300">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ================= PROJECTS ================= */}
-      <section id="projects" className="py-24 bg-[#0f1218]">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-14">
-            Real Projects (Not Sold Yet)
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-10">
-
-            {/* MITC */}
-            <div className="rounded-2xl border border-white/10 p-8 bg-white/5">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-2xl font-semibold">
-                  MITC Business Platform
-                </h3>
-                <span className="text-sm px-3 py-1 rounded-full bg-green-500/10 text-green-400">
-                  Available
-                </span>
-              </div>
-
-              <ul className="space-y-2 text-gray-300">
-                <li>• Admin dashboard with full control</li>
-                <li>• Customer leads & inquiries</li>
-                <li>• Reviews & ratings system</li>
-                <li>• SEO & social sharing optimized</li>
-                <li>• WhatsApp-first contact flow</li>
-              </ul>
+            <div className="mt-6 text-3xl font-bold text-gray-900">
+              ₹60,000
+              <span className="text-base font-medium text-gray-500 ml-2">
+                (One-time)
+              </span>
             </div>
 
-            {/* TECHMATE */}
-            <div className="rounded-2xl border border-white/10 p-8 bg-white/5">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-2xl font-semibold">
-                  Techmate Business Platform
-                </h3>
-                <span className="text-sm px-3 py-1 rounded-full bg-green-500/10 text-green-400">
-                  Available
-                </span>
-              </div>
+            <ul className="mt-8 space-y-3 text-gray-700">
+              <li>• Free subdomain (yourbusiness.kashpages.in)</li>
+              <li>• Fully custom-designed website (no premade theme)</li>
+              <li>• Desktop-first, mobile & tablet responsive</li>
+              <li>• Personal in-store setup & guidance</li>
+              <li>• Admin dashboard for leads & reviews</li>
+              <li>• Team management (up to 6 members)</li>
+              <li>• Social media SEO (WhatsApp, Facebook, Twitter)</li>
+              <li>• Secure hosting & deployment</li>
+              <li className="font-semibold">• Copyright: Developer</li>
+            </ul>
 
-              <ul className="space-y-2 text-gray-300">
-                <li>• Professional business presence</li>
-                <li>• Customer engagement system</li>
-                <li>• Admin-controlled content</li>
-                <li>• Scalable & secure architecture</li>
-                <li>• Mobile & desktop optimized</li>
-              </ul>
+            <a
+              href="https://wa.me/XXXXXXXXXX"
+              target="_blank"
+              className="mt-10 inline-block w-full text-center py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-black transition"
+            >
+              Enquire on WhatsApp
+            </a>
+          </div>
+
+          {/* PROFESSIONAL */}
+          <div className="border-2 border-gray-900 rounded-2xl p-8 shadow-xl relative">
+            <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-4 py-1 rounded-full text-sm">
+              Most Popular
+            </span>
+
+            <h2 className="text-2xl font-bold text-gray-900">Professional</h2>
+            <p className="mt-2 text-gray-600">
+              Ideal for growing businesses needing insights & branding control
+            </p>
+
+            <div className="mt-6 text-3xl font-bold text-gray-900">
+              ₹90,000
+              <span className="text-base font-medium text-gray-500 ml-2">
+                (One-time)
+              </span>
             </div>
 
+            <ul className="mt-8 space-y-3 text-gray-700">
+              <li>• Everything in Standard</li>
+              <li>• Visitor analytics & performance insights</li>
+              <li>• Team management (up to 10 members)</li>
+              <li>• Custom domain (1 year included)</li>
+              <li>• Business email (1 year included)</li>
+              <li>• Branding control (logo, slogan, hours, socials)</li>
+              <li>• Maintenance & bug fixes (6 months)</li>
+              <li>• Performance-ready architecture</li>
+              <li className="font-semibold">• Copyright: Developer</li>
+            </ul>
+
+            <a
+              href="https://wa.me/XXXXXXXXXX"
+              target="_blank"
+              className="mt-10 inline-block w-full text-center py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-black transition"
+            >
+              Enquire on WhatsApp
+            </a>
+          </div>
+
+          {/* PREMIUM */}
+          <div className="border rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <h2 className="text-2xl font-bold text-gray-900">Premium</h2>
+            <p className="mt-2 text-gray-600">
+              For serious businesses that want ownership & long-term stability
+            </p>
+
+            <div className="mt-6 text-3xl font-bold text-gray-900">
+              ₹1,20,000
+              <span className="text-base font-medium text-gray-500 ml-2">
+                (One-time)
+              </span>
+            </div>
+
+            <ul className="mt-8 space-y-3 text-gray-700">
+              <li>• Everything in Standard & Professional</li>
+              <li>• Google Search–optimized SEO</li>
+              <li>• Custom domain (3 years included)</li>
+              <li>• Business email (3 years included)</li>
+              <li>• Maintenance & support (1 year)</li>
+              <li>• Higher traffic & usage capacity</li>
+              <li>• Priority support</li>
+              <li className="font-semibold">
+                • Copyright: Transferred to Client
+              </li>
+            </ul>
+
+            <a
+              href="https://wa.me/XXXXXXXXXX"
+              target="_blank"
+              className="mt-10 inline-block w-full text-center py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-black transition"
+            >
+              Enquire on WhatsApp
+            </a>
           </div>
         </div>
       </section>
 
-      {/* ================= WHY ME ================= */}
-      <section className="py-24 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-14">
-            Why My Work Is Different
-          </h2>
-
-          <div className="grid md:grid-cols-4 gap-8 text-gray-300">
-            <p>• Business-first design thinking</p>
-            <p>• Clean, maintainable codebase</p>
-            <p>• Long-term scalability in mind</p>
-            <p>• Honest pricing & ownership clarity</p>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= FINAL CTA ================= */}
-      <section className="py-28 bg-gradient-to-br from-blue-600/20 to-transparent">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Looking for a serious business platform?
-          </h2>
-          <p className="text-gray-300 mb-10">
-            If you want something professional, scalable, and built properly —
-            let’s discuss your business.
+      {/* USAGE POLICY */}
+      <section className="bg-gray-50 border-t">
+        <div className="max-w-5xl mx-auto px-6 py-16">
+          <h3 className="text-2xl font-bold text-gray-900">
+            Usage & Storage Limits
+          </h3>
+          <p className="mt-4 text-gray-700">
+            To avoid forced subscriptions, the platform runs on an optimized
+            setup:
           </p>
 
-          <a
-            href="https://wa.me/919999999999"
-            target="_blank"
-            className="inline-block px-10 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 transition font-semibold"
-          >
-            Contact on WhatsApp
-          </a>
+          <ul className="mt-4 space-y-2 text-gray-700">
+            <li>• Reviews: up to 20,000</li>
+            <li>• Customer inquiries (leads): up to 50,000</li>
+          </ul>
+
+          <p className="mt-4 text-gray-700">
+            If usage grows beyond this, optimization or upgrades can be applied
+            safely. No forced monthly fees unless growth requires it.
+          </p>
         </div>
       </section>
 
-      {/* ================= FOOTER ================= */}
-      <footer className="border-t border-white/10 py-8 text-center text-gray-400 text-sm">
-        © {new Date().getFullYear()} KashPages · Built by Burhan Sheikh
-      </footer>
+      {/* FOOTER CTA */}
+      <section className="text-center py-20">
+        <h2 className="text-3xl font-bold text-gray-900">
+          Ready to move forward?
+        </h2>
+        <p className="mt-4 text-gray-600">
+          Serious inquiries only. Message me directly for demo & confirmation.
+        </p>
+
+        <a
+          href="https://wa.me/XXXXXXXXXX"
+          target="_blank"
+          className="mt-8 inline-block px-10 py-4 rounded-xl bg-gray-900 text-white font-semibold hover:bg-black transition"
+        >
+          Contact on WhatsApp
+        </a>
+      </section>
     </main>
   )
 }
