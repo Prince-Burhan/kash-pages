@@ -1,47 +1,24 @@
 {
-  "name": "kash-pages",
+  "name": "kashpages",
   "version": "1.0.0",
   "private": true,
-  "description": "Kash Pages — Next.js site",
-  "author": "Prince-Burhan",
-  "license": "MIT",
-  "engines": {
-    "node": "18.x"
-  },
+  "description": "Portfolio & project showcase for KashPages – professional web platforms by Burhan Sheikh",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "export": "next build && next export",
-    "lint": "next lint",
-    "format": "prettier --write .",
-    "clean": "rimraf .next node_modules",
-    "analyze": "cross-env ANALYZE=true next build"
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "dependencies": {
-    "next": "^14.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "firebase": "^10.0.0"
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "eslint": "^8.0.0",
-    "prettier": "^2.0.0",
-    "cross-env": "^7.0.0",
-    "rimraf": "^5.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Prince-Burhan/kash-pages.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Prince-Burhan/kash-pages/issues"
-  },
-  "homepage": "https://github.com/Prince-Burhan/kash-pages#readme",
-  "keywords": [
-    "next",
-    "nextjs",
-    "firebase",
-    "netlify"
-  ]
+    "eslint": "8.57.1",
+    "eslint-config-next": "14.2.35"
+  }
 }
