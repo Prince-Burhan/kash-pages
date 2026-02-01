@@ -2,23 +2,26 @@
   "name": "kashpages",
   "version": "1.0.0",
   "private": true,
-  "description": "Portfolio & project showcase for KashPages – professional web platforms by Burhan Sheikh",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "engines": {
-    "node": "18.x"
-  },
   "dependencies": {
     "next": "14.2.35",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "eslint": "8.57.1",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "typescript": "^5.4.0",
+    "eslint": "^8.57.1",
     "eslint-config-next": "14.2.35"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
